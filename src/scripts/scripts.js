@@ -75,6 +75,30 @@ startCountdown(targetDate);
     });
 }*/
 
+const menuToggle = document.querySelector('.menu-toggle');
+const navContainer = document.querySelector('.nav-container');
+const navLinks = document.querySelectorAll('.nav a');
+
+// Alterna o menu ao clicar no botão
+menuToggle.addEventListener('click', () => {
+  navContainer.classList.toggle('active');
+  
+  // Alterna entre o ícone de menu (hambúrguer) e "X"
+  if (navContainer.classList.contains('active')) {
+    menuToggle.innerHTML = 'X'; // Altera para "X" quando o menu está aberto
+  } else {
+    menuToggle.innerHTML = '&#9776;'; // Altera de volta para o ícone "hambúrguer" quando fechado
+  }
+});
+
+// Oculta o menu ao clicar em um dos links
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navContainer.classList.remove('active');
+    menuToggle.innerHTML = '&#9776;'; // Volta para o ícone de menu "hambúrguer"
+  });
+});
+
 $(document).ready(function () {
   toastr.options = {
     'closeButton': true,
