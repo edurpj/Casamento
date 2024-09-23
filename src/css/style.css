@@ -1,7 +1,7 @@
 body {
 	background: #e6f5db;
 	color: #828282;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Baloo Thambi 2', cursive;
 }
 
 header {
@@ -41,7 +41,7 @@ li a {
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Baloo Thambi 2', cursive;
 	font-size: 1.5rem;
 }
 
@@ -65,7 +65,6 @@ li a:hover {
 	font-size: 2.5rem;
 	padding-top: 1rem;
 	color: #fff;
-	text-shadow: 0px 10px 30px rgb(5, 5, 5);
 	margin-bottom: 30px;
 }
 
@@ -91,7 +90,6 @@ li a:hover {
 	border-radius: 8px;
 	/* Cantos arredondados */
 	background-color: #f8f9fa;
-	box-shadow: 0px 10px 30px #282930;
 	/* Fundo da caixa */
 	width: 80px;
 	/* Largura fixa para uniformidade */
@@ -100,63 +98,42 @@ li a:hover {
 .flip {
 	font-size: 2.5rem;
 	font-weight: bold;
-	color: #2d3436;
+	color: #688455;
 }
 
 .label {
 	font-size: 1rem;
-	color: #636e72;
+	color: #688455;
 	margin-top: 10px;
 }
 
-.menu {
-	background-color: #333;
-  }
-  
-  .nav-container {
-	max-width: 100%; /* Preenche toda a largura da tela */
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between; /* Alinha os itens à esquerda e direita */
-	align-items: center;
-	padding: 10px;
-  }
-  
-  /* Estilizando as iniciais à esquerda */
-  .brand {
-	font-size: 24px;
-	color: white;
-	font-weight: bold;
-  }
-  
-  /* Estilo do botão de menu */
-  .menu-toggle {
-	display: none;
-	font-size: 28px;
-	color: white;
-	background: none;
-	border: none;
-	cursor: pointer;
-  }
-  
-  /* Estilos do menu de navegação */
-  .nav {
-	display: flex;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-  }
-  
-  .nav li {
-	margin-right: 20px;
-  }
-  
-  .nav a {
+.nav-link{
 	text-decoration: none;
 	color: white;
 	padding: 10px;
-  }
-  
+}
+
+.navbar-brand{
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+	font-size: 2rem;
+}
+
+.navbar-toggler {
+	background-color: #e6f5db;
+}
+
+.navbar {
+	background-color: #688455;
+	font-size: 1.5rem;
+	padding: 0%;
+
+}
+
+.paroquiaTitle {
+	font-size: 2rem;
+}
 
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
@@ -187,39 +164,6 @@ li a:hover {
 
 	}
 
-	.brand {
-		display: none; /* Oculta "J & E" em telas pequenas */
-	  }
-	
-	  .nav {
-		display: none;
-		flex-direction: column;
-		width: 100%;
-		align-items: center;
-	  }
-	
-	  .nav li {
-		margin: 10px 0; /* Espaçamento entre os links no modo colapsado */
-	  }
-	
-	  .menu-toggle {
-		display: block;
-	  }
-	
-	  /* Exibe o menu e altera o ícone para "X" quando o menu estiver ativo */
-	  .nav-container.active .menu-toggle {
-		content: 'X';
-		font-size: 32px;
-		color: white;
-	  }
-	
-	  .nav-container.active .nav {
-		display: flex;
-	  }
-	
-	  .nav-container.active .brand {
-		display: none; /* Garante que "J & E" continue oculto quando o menu estiver ativo */
-	  }
 }
 
 @media (max-width: 480px) {
@@ -247,44 +191,6 @@ li a:hover {
 
 	background-color: #688455;
 	text-shadow: 0px 10px 30px #282930;
-}
-
-@media (max-width: 768px) {
-	.menu {
-		flex-direction: column;
-		/* Muda o layout para vertical */
-		align-items: center;
-		/* Centraliza os itens verticalmente */
-	}
-
-	.menu li {
-		margin: 10px 0;
-		/* Espaçamento entre os itens no layout vertical */
-	}
-
-	.menu a {
-		font-size: 1rem;
-		/* Reduz o tamanho da fonte em telas menores */
-	}
-}
-
-@media (max-width: 480px) {
-	.menu {
-		flex-direction: column;
-		align-items: flex-start;
-		/* Alinha os itens à esquerda em telas muito pequenas */
-		padding: 10px;
-		/* Reduz o padding geral */
-	}
-
-	.menu li {
-		margin: 8px 0;
-	}
-
-	.menu a {
-		font-size: 0.9rem;
-		/* Reduz ainda mais o tamanho da fonte */
-	}
 }
 
 .tipeCard {
@@ -538,11 +444,39 @@ li a:hover {
 	}
 }
 
-.credits {
-	margin-top: 1rem;
-	text-align: right;
-}
+@media (max-width: 640px) {
+	.timeline-list {
+		grid-template-columns: 1fr var(--line-w) 1fr;
+	}
 
-.credits a {
-	color: var(--color);
+	.timeline-list::before {
+		grid-column: 2;
+	}
+
+	.timeline-list li:nth-child(odd) {
+		grid-column: 1;
+	}
+
+	.timeline-list li:nth-child(even) {
+		grid-column: 3;
+	}
+
+	/* início do segundo card */
+	.timeline-list li:nth-child(2) {
+		grid-row: 2/4;
+	}
+
+	.timeline-list li:nth-child(odd) .date::before {
+		clip-path: polygon(0 0, 100% 0, 100% 100%);
+		left: 0;
+	}
+
+	.timeline-list li:nth-child(odd) .date::after {
+		transform: translate(-50%, -50%);
+		left: calc(100% + var(--col-gap) + var(--line-w) / 2);
+	}
+
+	.timeline-list li:nth-child(odd) .date {
+		border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
+	}
 }
