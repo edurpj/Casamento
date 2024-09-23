@@ -112,29 +112,32 @@ li a:hover {
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
 	.countdown-container {
-	  padding: 20px;
-	  gap: 10px;
+		padding: 20px;
+		gap: 10px;
 	}
-  
+
 	.countdown-box {
-	  width: 90px; /* Aumenta a largura das caixas para evitar que o texto fique espremido */
-	  padding: 8px;
+		width: 90px;
+		/* Aumenta a largura das caixas para evitar que o texto fique espremido */
+		padding: 8px;
 	}
-  
+
 	.flip {
-	  font-size: 2.2rem; /* Reduz o tamanho do número */
+		font-size: 2.2rem;
+		/* Reduz o tamanho do número */
 	}
-  
+
 	.label {
-	  font-size: 0.9rem; /* Reduz o tamanho do texto "Segundos" */
+		font-size: 0.9rem;
+		/* Reduz o tamanho do texto "Segundos" */
 	}
-  
+
 	.title {
-	  font-size: 2rem;
-	  padding-top: 1rem;
+		font-size: 2rem;
+		padding-top: 1rem;
 
 	}
-  }
+}
 
 @media (max-width: 480px) {
 	.countdown-container {
@@ -165,37 +168,44 @@ li a:hover {
 
 @media (max-width: 768px) {
 	.menu {
-	  flex-direction: column; /* Muda o layout para vertical */
-	  align-items: center; /* Centraliza os itens verticalmente */
+		flex-direction: column;
+		/* Muda o layout para vertical */
+		align-items: center;
+		/* Centraliza os itens verticalmente */
 	}
-  
+
 	.menu li {
-	  margin: 10px 0; /* Espaçamento entre os itens no layout vertical */
+		margin: 10px 0;
+		/* Espaçamento entre os itens no layout vertical */
 	}
-  
+
 	.menu a {
-	  font-size: 1rem; /* Reduz o tamanho da fonte em telas menores */
+		font-size: 1rem;
+		/* Reduz o tamanho da fonte em telas menores */
 	}
-  }
-  
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
 	.menu {
-	  flex-direction: column;
-	  align-items: flex-start; /* Alinha os itens à esquerda em telas muito pequenas */
-	  padding: 10px; /* Reduz o padding geral */
+		flex-direction: column;
+		align-items: flex-start;
+		/* Alinha os itens à esquerda em telas muito pequenas */
+		padding: 10px;
+		/* Reduz o padding geral */
 	}
-  
+
 	.menu li {
-	  margin: 8px 0;
+		margin: 8px 0;
 	}
-  
+
 	.menu a {
-	  font-size: 0.9rem; /* Reduz ainda mais o tamanho da fonte */
+		font-size: 0.9rem;
+		/* Reduz ainda mais o tamanho da fonte */
 	}
-  }
+}
 
 .tipeCard {
-	font-size: 3rem;
+	font-size: 2.3rem;
 	color: #688455;
 	;
 	text-align: start;
@@ -224,23 +234,24 @@ li a:hover {
 	background-color: #f5f5f5;
 }
 
-.btn-primary {
-	background-color: #2d3436;
-	border: none;
-
-}
-
 .btnChavePix {
-	background-color: #2d3436;
+	background-color: #ffffff;
 	border: none;
-	color: #fff;
+	color: #000000;
 	margin: auto;
-    margin-top: 2%;
+	margin-top: 2%;
 
 }
 
 .card-title {
 	color: white;
+}
+
+.btn-primary {
+	background-color: #ffffff;
+	border: none;
+	color: #000000;
+
 }
 
 .btn-primary:hover {
@@ -258,11 +269,11 @@ li a:hover {
 	text-align: center;
 	font-size: 1rem;
 	box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  .footerCopy p {
+}
+
+.footerCopy p {
 	margin: 0;
-  }
+}
 
 @media (min-width: 768px) {
 	.col-md-4 {
@@ -452,4 +463,3 @@ li a:hover {
 .credits a {
 	color: var(--color);
 }
-

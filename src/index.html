@@ -8,6 +8,7 @@
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
     integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="icon" href="img/aliancas-de-casamento.png">
   <title>J & E</title>
@@ -18,7 +19,7 @@
   <nav class="menu">
     <ul class="nav">
       <li><a href="#home">Home</a></li>
-      <li><a href="#linhaTempo">Linha do tempo</a></li>
+      <li><a href="#sobreTimeline">Sobre o casal</a></li>
       <li><a href="#presentes">Lista de presentes</a></li>
     </ul>
   </nav>
@@ -70,7 +71,7 @@
     </div>
 
   </section>
-  <section class="sobreTimeline">
+  <section class="sobreTimeline" id="sobreTimeline">
 
     <section class="caixa">
 
@@ -144,7 +145,7 @@
                 <div class="details" id="details1">
                   <img src="img/qrCode.jpg" alt="Imagem Demonstrativa" class="card-img-top">
                   <div>
-                    <button id="copyButton" class="btn btnChavePix"">Copiar Chave PIX</button>
+                    <button id="copyButton" class="btn btnChavePix">Copiar Chave PIX</button>
                   </div>
                 </div>
               </div>
@@ -160,6 +161,9 @@
                 <button class="btn btn-primary" onclick="showDetails('details2')">Presentear</button>
                 <div class="details" id="details2">
                   <img src="img/qrCode.jpg" alt="Imagem Demonstrativa" class="card-img-top">
+                  <div>
+                    <button id="copyButton" class="btn btnChavePix" onclick="copiarText()">Copiar Chave PIX</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -174,6 +178,9 @@
                 <button class="btn btn-primary" onclick="showDetails('details3')">Presentear</button>
                 <div class="details" id="details3">
                   <img src="img/qrCode.jpg" alt="Imagem Demonstrativa" class="card-img-top">
+                  <div>
+                    <button id="copyButton" class="btn btnChavePix">Copiar Chave PIX</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -204,6 +211,8 @@
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
   <script src="scripts/scripts.js"></script>
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 </body>
 
 </html>
