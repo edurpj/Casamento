@@ -128,11 +128,23 @@ li a:hover {
 	background-color: #688455;
 	font-size: 1.5rem;
 	padding: 0%;
+	position: -webkit-sticky; /* Necessário para funcionar no Safari */
+    position: sticky;
+    top: 0;
+	z-index: 1000;
 
 }
 
 .paroquiaTitle {
 	font-size: 2rem;
+}
+
+.Map {
+	padding-bottom: 2%;
+}
+
+.presentes {
+	background-color: #ffffff;
 }
 
 /* Responsividade para telas menores */
