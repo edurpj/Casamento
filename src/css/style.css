@@ -107,13 +107,13 @@ li a:hover {
 	margin-top: 10px;
 }
 
-.nav-link{
+.nav-link {
 	text-decoration: none;
 	color: white;
 	padding: 10px;
 }
 
-.navbar-brand{
+.navbar-brand {
 	text-decoration: none;
 	color: white;
 	padding: 10px;
@@ -128,9 +128,10 @@ li a:hover {
 	background-color: #688455;
 	font-size: 1.5rem;
 	padding: 0%;
-	position: -webkit-sticky; /* Necessário para funcionar no Safari */
-    position: sticky;
-    top: 0;
+	position: -webkit-sticky;
+	/* Necessário para funcionar no Safari */
+	position: sticky;
+	top: 0;
 	z-index: 1000;
 
 }
@@ -152,55 +153,49 @@ li a:hover {
 	text-align: center;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
 	.row {
 	  display: flex;
 	  flex-wrap: wrap;
-	  justify-content: space-between;
 	}
   
 	.col-md-4 {
-	  flex: 0 0 32%;
-	  max-width: 32%;
-	  margin-bottom: 10px;
-	  
+	  flex: 0 0 40%;
+	  max-width: 50%;
+	  box-sizing: border-box;
+	  padding: 5px;
 	}
   
 	.card {
-	  margin: 0 auto;
+	  width: 100%;
 	}
-
-	.card-title {
-		font-size: 1.3rem;
+  
+	.btnChavePix {
+	  width: 100%;
+	  font-size: 14px;
+	  padding: 10px;
 	}
-
-	.btn {
-		width: 100%;
-		font-size: 14px;
-		padding: 10px;
-		font-size: 0.6rem;
-	  }
   }
 
-@media (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 768px) {
 
 	.row {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-	  }
-	
-	  .col-md-4 {
+	}
+
+	.col-md-4 {
 		flex: 0 0 33%;
 		max-width: 33%;
 		margin-bottom: 10px;
-	  }
-	
-	  .card {
-		margin: 0 auto;
-	  }
+	}
 
-	  .container {
+	.card {
+		margin: 0 auto;
+	}
+
+	.container {
 		max-width: none;
 		width: 100%;
 	}
@@ -239,7 +234,6 @@ li a:hover {
 
 	.countdown-box {
 		width: 90px;
-		/* Aumenta a largura das caixas para evitar que o texto fique espremido */
 		padding: 8px;
 	}
 
