@@ -152,28 +152,57 @@ li a:hover {
 	text-align: center;
 }
 
-/* Responsividade para telas menores */
+@media (max-width: 576px) {
+	.row {
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: space-between;
+	}
+  
+	.col-md-4 {
+	  flex: 0 0 32%;
+	  max-width: 32%;
+	  margin-bottom: 10px;
+	  
+	}
+  
+	.card {
+	  margin: 0 auto;
+	}
+
+	.card-title {
+		font-size: 1.3rem;
+	}
+
+	.btn {
+		width: 100%;
+		font-size: 14px;
+		padding: 10px;
+		font-size: 0.6rem;
+	  }
+  }
+
 @media (max-width: 768px) {
 
 	.row {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between; /* Mantém o espaço entre os cards */
+		justify-content: space-between;
 	  }
 	
 	  .col-md-4 {
-		flex: 0 0 33%; /* Cada card ocupará 32% da largura, permitindo 3 por linha com espaço */
+		flex: 0 0 33%;
 		max-width: 33%;
-		margin-bottom: 10px; /* Ajusta o espaçamento inferior dos cards */
+		margin-bottom: 10px;
 	  }
 	
 	  .card {
-		margin: 0 auto; /* Centraliza o card dentro do espaço definido */
+		margin: 0 auto;
 	  }
 
 	  .container {
-		max-width: none; /* Sobrescreve qualquer limitação de largura */
-		width: 100%;     /* Garante que a largura ocupe o espaço total */
+		max-width: none;
+		width: 100%;
 	}
 
 	.countdown-container {
@@ -183,18 +212,15 @@ li a:hover {
 
 	.countdown-box {
 		width: 90px;
-		/* Aumenta a largura das caixas para evitar que o texto fique espremido */
 		padding: 8px;
 	}
 
 	.flip {
 		font-size: 2.2rem;
-		/* Reduz o tamanho do número */
 	}
 
 	.label {
 		font-size: 0.9rem;
-		/* Reduz o tamanho do texto "Segundos" */
 	}
 
 	.title {
